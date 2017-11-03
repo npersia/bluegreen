@@ -2,6 +2,13 @@ apiVersion: v1
 kind: Template
 labels:
   template: bluegreen-pipeline
+metadata:
+  annotations:
+    description: This example showcases a blue green deployment using a Jenkins
+      pipeline that pauses for approval.
+    iconClass: icon-jenkins
+    tags: instant-app,jenkins
+  name: bluegreen-pipeline
 objects:  
   - apiVersion: v1
     kind: BuildConfig
